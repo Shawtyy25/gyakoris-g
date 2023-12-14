@@ -15,14 +15,14 @@ def isPerfect():
     pass
 
 def makeNumber(text):
-    
-    while True:
+    isCorrect = True
+    while isCorrect:
         num = input(text)
 
         try: 
             num = int(num)
             return num
-
+            isCorrect = False
         except ValueError:
             print('helytelen érték')
 
